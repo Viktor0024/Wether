@@ -47,11 +47,12 @@ fun HomeScreen(viewModel: HomeViewModel = viewModel()) {
             Spacer(modifier = Modifier.height(8.dp))
             Log.d("MyLog", " ${weather.city}")
             Text("Город: ${weather.city}")
+            Text("")
             Text("Температура: ${weather.temperatureC} °C")
             Text("Погода: ${weather.condition}")
             Text("Ветер: ${weather.windSpeed} м/с")
         } else if (state.error != null) {
-            Text("Ошибка: $ {state.error}", color = MaterialTheme.colorScheme.error)
+            Text("     Ошибка: $ {state.error}", color = MaterialTheme.colorScheme.error)
         }
 
         Spacer(modifier = Modifier.height(24.dp))
