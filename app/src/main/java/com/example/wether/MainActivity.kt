@@ -3,13 +3,14 @@ package com.example.wether
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.example.wether.ui.Serch.SearchScreen
 import com.example.wether.ui.home.HomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-           HomeScreen()
+            SearchScreen()
         }
     }
 }
